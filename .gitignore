@@ -118,3 +118,8 @@ src/nTrueVersion.h
 .changetag
 fingerprint
 wget-log*
+
+desktop/armagetronad.appdata.xml
+desktop/os-x/build_bundle.sh
+src/**/.dirstamp
+src/tools/values/vParser.cpp
