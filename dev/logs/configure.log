@@ -1,0 +1,207 @@
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking target system type... aarch64-unknown-linux-gnu
+checking for ranlib... ranlib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether ln -s works... yes
+checking for bison... bison -y
+checking bison version... bison (GNU Bison) 3.8.2
+checking for m4... true
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking CXXFLAGS for gcc -std=c++17... -std=c++17
+checking for gcc... gcc
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking for g++ option to enable C++11 features... (cached) none needed
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for gmake... yes
+checking for bash... yes
+checking for boostlib >= 1.33.1 (103301)... yes
+checking whether make understands sinclude... yes
+checking for socklen_t... yes
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking whether the compiler supports GNU Objective C... no
+checking whether not_needed_on_this_platform accepts -g... no
+checking dependency style of not_needed_on_this_platform... none
+checking for libxml-2.0 >= 2.6.11... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether LIBXML_HTTP_ENABLED is declared... yes
+checking whether the Boost::System library is available... yes
+checking for exit in -lboost_system... yes
+checking whether the Boost::Thread library is available... yes
+checking for exit in -lboost_thread... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/stat.h... (cached) yes
+checking for protoc... /usr/bin/protoc
+checking for protobuf >= 2.4.0... yes
+checking for google/protobuf/message.h... yes
+checking for time.h... yes
+checking for clock_gettime in -lrt... yes
+checking for exp in -lm... yes
+checking whether SDL2 is installed... yes
+checking for SDL_GL_SetAttribute... yes
+checking for Mix_OpenAudio in -lSDL2_mixer... yes
+./configure: line 15736: sdl-config: command not found
+checking for XOpenDisplay in -lX11... yes
+checking for glVertex3f in -lGL... yes
+checking for gluBuild3DMipmaps in -lGLU... yes
+checking for glewInit in -lGLEW... yes
+checking for GL/glew.h... yes
+checking for libpng... yes
+checking for png_sig_cmp... yes
+checking for ftglRenderGlyph in -lftgl... yes
+./configure: line 16395: freetype-config: command not found
+./configure: line 16395: sdl-config: command not found
+checking for FT_Init_FreeType in -lfreetype... yes
+./configure: line 16471: freetype-config: command not found
+./configure: line 16472: freetype-config: command not found
+checking whether FTGLPixmapFont.h is deprecated... yes
+checking for FTGL/ftgl.h... yes
+checking for IMG_Load in -lSDL2_image... yes
+checking for SDL_image.h... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for unistd.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for select... yes
+checking for atan2f... yes
+checking for sinf... yes
+checking for cosf... yes
+checking for tanf... yes
+checking for sqrtf... yes
+checking for logf... yes
+checking for expf... yes
+checking for fabsf... yes
+checking for floorf... yes
+checking for pow10... no
+checking for pow10f... no
+checking for exp10... yes
+checking for exp10f... yes
+checking for wmemset... yes
+checking for clearenv... yes
+checking for std::align in memory... yes
+checking alternative binary path /usr/local/bin/games... no
+checking alternative binary path /usr/local/games... no
+checking alternative binary path /usr/local/games/bin... no
+checking for /proc/self/maps... yes
+checking whether everything is installed to the same prefix... yes
+checking whether binary relocation support should be enabled... yes
+checking for pthread_getspecific in -lpthread... yes
+checking whether binary relocation should use threads... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating src/protobuf/Makefile
+config.status: creating src/first/Makefile
+config.status: creating Makefile
+config.status: creating batch/Makefile
+config.status: creating language/languages.txt
+config.status: creating config/rc.config
+config.status: creating config/aiplayers.cfg
+config.status: creating src/doc/Makefile
+config.status: creating src/doc/net/Makefile
+config.status: creating src/doc/Doxyfile
+config.status: creating src/doc/html.m4
+config.status: creating src/thirdparty/Makefile
+config.status: creating src/thirdparty/particles/Makefile
+config.status: creating src/thirdparty/mathexpr/Makefile
+config.status: creating src/thirdparty/scrap/Makefile
+config.status: creating src/swig/Makefile
+config.status: creating resource/Makefile
+config.status: creating config/Makefile
+config.status: creating desktop/Makefile
+config.status: creating www-root/Makefile
+config.status: creating desktop/armagetronad-armagetronad.desktop
+config.status: creating desktop/armagetronad-armagetronad-handler.desktop
+config.status: creating desktop/armagetronad-link.xml
+config.status: creating desktop/armagetronad.protocol
+config.status: creating desktop/armagetronad.appdata.xml
+config.status: creating desktop/os-x/Info.plist
+config.status: creating desktop/os-x/build_bundle.sh
+config.status: creating docker/build/Makefile
+config.status: creating docker/build/setup_ci_test.sh
+config.status: creating docker/build/context/version.sh
+config.status: creating docker/deploy/targets.sh
+config.status: creating aa_config.h
+config.status: executing depfiles commands
+config.status: executing universal_variables commands
+config.status: executing pathsubstitution commands
+Configuration complete!
+
+Options selected are:
+     Build Regular Game Client: true
+     Build Dedicated Server: false
+     Build Master Server: false
+
+Installation options:
+     Prefix: /usr/local
+
+     Sound support: yes
+     Particle System support: no
+     Joystick support: yes
+     Zones support: Basic, Fortress
+
+     Binaries will be installed in      : ${prefix}/bin
+     Static data will be installed in   : ${prefix}/share/games/armagetronad
+     Configuration will be installed in : ${prefix}/etc/games/armagetronad
+     Link to configuration will go to   : /etc/armagetronad
+     Build with Krawall authentication support: no
+     Ruby support: no
+     Call sysinstall: yes
+     Generate uninstall: yes
+     Allow multiple versions: no
+     Use custom memory manager: no
+     Debug level : 0
+     Code level  : 0
+     CPPFLAGS    :  -I/usr/include/libxml2  -I/usr/include/SDL2 -D_REENTRANT -I/usr/include/FTGL -I/usr/include/freetype2 -I/usr/include/libpng16   -pthread -I/usr/include
+     CXXFLAGS    : -O2 -std=c++17  -I/usr/include/libpng16 
+     LIBS        : -lpthread -lprotobuf  -lSDL2_image -lGLEW -lGLU -lGL -lX11 -L/usr/X11R6/lib -lSDL2_mixer -lSDL2 -lm -lrt   -lxml2  -lpng16  -lftgl   -L/usr/lib/aarch64-linux-gnu -lboost_system -lboost_thread -lpthread
+
+Warning: The configure script decided that, to better work on your system,
+  it would be a good idea to modify files outside of /usr/local
+   during installation or while running. If you disagree, rerun configure with
+    --disable-etc
+  after consulting "configure --help" for the effects; if you want to get rid
+  of this warning, pass the corresponding opposite switches.
+

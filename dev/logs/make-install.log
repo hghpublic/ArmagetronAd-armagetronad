@@ -1,0 +1,238 @@
+Making install in src
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src'
+Making install in first
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/first'
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/first'
+make -C ../../ install-first
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad'
+test -n "/usr/local/bin/armagetronad-uninstall" && test -x "/usr/local/bin/armagetronad-uninstall" && "/usr/local/bin/armagetronad-uninstall" || true
+Uninstalling configuration directories in /etc...
+xdg-icon-resource: unexpected argument 'org.armagetronad.armagetronad'
+Try 'xdg-icon-resource --help' for more information.
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/first'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/first'
+Making install in protobuf
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/protobuf'
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/protobuf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/protobuf'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/protobuf'
+Making install in thirdparty
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty'
+Making install in particles
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/particles'
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/particles'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/particles'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/particles'
+Making install in mathexpr
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/mathexpr'
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/mathexpr'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/mathexpr'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/mathexpr'
+Making install in scrap
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/scrap'
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/scrap'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/scrap'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty/scrap'
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty'
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/thirdparty'
+Making install in swig
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/swig'
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/swig'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/swig'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/swig'
+Making install in doc
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/doc'
+echo commands.html.dep ":\\" > commands.html.dep
+grep "include(" commands.html.m4 | sed -e "s,include(\(.*\)),./\1\\\," >> commands.html.dep
+echo "Makefile" >> commands.html.dep
+Making install in net
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/doc/net'
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/doc/net'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/doc/net'
+ /usr/bin/install -c -m 644 index.html lower.html middle.html upper.html '/usr/local/share/games/armagetronad/doc/net'
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/doc/net'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/doc/net'
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/doc'
+echo "define(CHANGEDATE, 2026-01-20) include(../../src/doc/html.m4) include(commands.html.m4)" | m4 -I . > commands.html || cp commands.html.m4 commands.html
+make[4]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/doc'
+ /usr/bin/install -c -m 644 bugs.html changelog.html commands.html compile.html config.html faq.html index.html install_linux.html install_macosx.html install_result.html install_windows.html network.html readme_macosx.html todo.html versions.html '/usr/local/share/games/armagetronad/doc'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/doc'
+ /usr/bin/install -c -m 644 commands.txt COPYING.txt Content_Creation/Howto-Maps.txt '/usr/local/share/games/armagetronad/doc'
+make[4]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/doc'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/doc'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src/doc'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src'
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /usr/bin/install -c armagetronad_main '/usr/local/bin'
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/src'
+Making install in resource
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/resource'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/resource'
+make[2]: Nothing to be done for 'install-exec-am'.
+rm -rf linked_included.install
+if test ! -r linked_included.install; then \
+	if test -d included; then\
+		ln -sf ./included linked_included.install;\
+	else\
+		ln -sf ./included linked_included.install;\
+	fi;\
+fi
+mkdir -p "/usr/local/share/games/armagetronad/resource/included"
+cp -r linked_included.install/* "/usr/local/share/games/armagetronad/resource/included"
+find "/usr/local/share/games/armagetronad/resource" -type d -exec chmod 755 \{\} \;
+find "/usr/local/share/games/armagetronad/resource" -type f -exec chmod 644 \{\} \;
+rm -f linked_included.install	
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/resource'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/resource'
+Making install in batch
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/batch'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/batch'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/scripts'
+ /usr/bin/install -c rcd_config rcd_startstop sysinstall relocate '/usr/local/share/games/armagetronad/scripts'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/batch'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/batch'
+Making install in config
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/config'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/config'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/etc/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/etc/games/armagetronad/examples'
+ /usr/bin/install -c -m 644  examples/breakfast_in_hell.cfg examples/single_use_turbo.cfg examples/fortress_soccer.cfg examples/death_zone.cfg examples/teamsumo.cfg '/usr/local/etc/games/armagetronad/examples'
+ /usr/bin/install -c -m 644  default.cfg master.srv settings.cfg settings_dedicated.cfg aiplayers.cfg rc.config subcultures.srv settings_visual.cfg uphillbothways.cfg serverconfigcache.cfg settings_authentication.cfg zonestyle_vertical.cfg zonestyle_flat.cfg zonestyle_combined.cfg '/usr/local/etc/games/armagetronad/.'
+ /usr/bin/mkdir -p '/usr/local/etc/games/armagetronad/sdl1'
+ /usr/bin/install -c -m 644  sdl1/default.cfg sdl1/keys_cursor.cfg sdl1/keys_wasd.cfg sdl1/keys_zqsd.cfg sdl1/keys_twohand.cfg sdl1/keys_x.cfg sdl1/keys_cursor_single.cfg '/usr/local/etc/games/armagetronad/sdl1'
+ /usr/bin/mkdir -p '/usr/local/etc/games/armagetronad/examples/cvs_test'
+ /usr/bin/install -c -m 644  examples/cvs_test/fortress_physics.cfg examples/cvs_test/fortress_scoring.cfg examples/cvs_test/fortress_politics.cfg examples/cvs_test/fortress_complete.cfg examples/cvs_test/sumo_complete.cfg '/usr/local/etc/games/armagetronad/examples/cvs_test'
+ /usr/bin/mkdir -p '/usr/local/etc/games/armagetronad/sdl2'
+ /usr/bin/install -c -m 644  sdl2/default.cfg sdl2/keys_cursor.cfg sdl2/keys_wasd.cfg sdl2/keys_twohand.cfg sdl2/keys_x.cfg sdl2/keys_cursor_single.cfg '/usr/local/etc/games/armagetronad/sdl2'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/config'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/config'
+Making install in desktop
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/desktop'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/desktop'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/desktop'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/desktop/icons/32x32'
+ /usr/bin/install -c -m 644  icons/32x32/armagetronad.png '/usr/local/share/games/armagetronad/desktop/icons/32x32'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/desktop/icons/128x128'
+ /usr/bin/install -c -m 644  icons/128x128/armagetronad.png '/usr/local/share/games/armagetronad/desktop/icons/128x128'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/desktop/icons/64x64'
+ /usr/bin/install -c -m 644  icons/64x64/armagetronad.png '/usr/local/share/games/armagetronad/desktop/icons/64x64'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/desktop/icons/16x16'
+ /usr/bin/install -c -m 644  icons/16x16/armagetronad.png '/usr/local/share/games/armagetronad/desktop/icons/16x16'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/desktop/icons/48x48'
+ /usr/bin/install -c -m 644  icons/48x48/armagetronad.png '/usr/local/share/games/armagetronad/desktop/icons/48x48'
+ /usr/bin/install -c -m 644  armagetronad-armagetronad.desktop armagetronad-armagetronad-handler.desktop armagetronad-link.xml armagetronad.appdata.xml '/usr/local/share/games/armagetronad/desktop/.'
+ /usr/bin/mkdir -p '/usr/local/share/services'
+ /usr/bin/install -c -m 644  armagetronad.protocol '/usr/local/share/services/.'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/desktop'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/desktop'
+Making install in www-root
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/www-root'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/www-root'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/www-root'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/www-root/css'
+ /usr/bin/install -c -m 644  css/admin.css '/usr/local/share/games/armagetronad/www-root/css'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/www-root/admin'
+ /usr/bin/install -c -m 644  admin/README '/usr/local/share/games/armagetronad/www-root/admin'
+ /usr/bin/install -c -m 644  index.html '/usr/local/share/games/armagetronad/www-root/.'
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/www-root'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/www-root'
+Making install in docker/build
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad/docker/build'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad/docker/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/docker/build'
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad/docker/build'
+make[1]: Entering directory '/workspaces/ArmagetronAd-armagetronad'
+make[2]: Entering directory '/workspaces/ArmagetronAd-armagetronad'
+make  install-exec-hook
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad'
+/bin/bash /workspaces/ArmagetronAd-armagetronad/install-sh -c batch/make/uninstall "/usr/local/bin/armagetronad-uninstall"
+rm "/usr/local/bin/armagetronad-uninstall"
+ROOTDIR= DESTDIR="" MAKE="make" PREFIX="/usr/local" PROGTITLE="Armagetron Advanced" PROGNAME="armagetronad" SCRIPTDIR="/usr/local/share/games/armagetronad/scripts" sh batch/make/uninstall "/usr/local/bin/armagetronad-uninstall" ""
+Generating uninstallation script /usr/local/bin/armagetronad-uninstall...
+Performing test installation...Success!
+done.
+cd  "/usr/local/bin"; mv armagetronad_main armagetronad
+echo 'No tasks for the master server'
+No tasks for the master server
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/language'
+ /usr/bin/install -c -m 644  language/languages.txt.in language/english_base.txt language/english_base_notranslate.txt language/american.txt language/british.txt language/deutsch.txt language/french.txt language/spanish.txt language/polish.txt language/russian.txt language/update.py '/usr/local/share/games/armagetronad/language'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/language'
+ /usr/bin/install -c -m 644  language/languages.txt language/english_base.txt language/english_base_notranslate.txt language/american.txt language/british.txt language/deutsch.txt language/french.txt language/spanish.txt language/polish.txt language/russian.txt '/usr/local/share/games/armagetronad/language'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/models'
+ /usr/bin/install -c -m 644  models/cycle_body.mod models/cycle_front.mod models/cycle_rear.mod '/usr/local/share/games/armagetronad/models'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/music'
+ /usr/bin/install -c -m 644  music/titletrack.ogg music/when.ogg music/doIknowyou.ogg music/fortresswalk.ogg music/default.m3u music/fortresswalk.aatrack '/usr/local/share/games/armagetronad/music'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/sound'
+ /usr/bin/install -c -m 644  sound/1voicemale.ogg sound/announcerGO.ogg sound/expl.ogg sound/2voicemale.ogg sound/cycle_turn.ogg sound/grind.ogg sound/3voicemale.ogg sound/cyclrun.ogg sound/zone_spawn.ogg sound/cyclrun.wav '/usr/local/share/games/armagetronad/sound'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/navigation'
+ /usr/bin/install -c -m 644  textures/tutorials/navigation/fail2.png textures/tutorials/navigation/fancy.png textures/tutorials/navigation/fail3.png textures/tutorials/navigation/indirect.png textures/tutorials/navigation/fail1.png textures/tutorials/navigation/zone.png textures/tutorials/navigation/direct.png textures/tutorials/navigation/start.png textures/tutorials/navigation/navigation.txt '/usr/local/share/games/armagetronad/textures/tutorials/navigation'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/clipart'
+ /usr/bin/install -c -m 644  textures/tutorials/clipart/fail.png textures/tutorials/clipart/background.png textures/tutorials/clipart/check.png textures/tutorials/clipart/circle.png '/usr/local/share/games/armagetronad/textures/tutorials/clipart'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures'
+ /usr/bin/install -c -m 644  textures/cycle_body.png textures/cycle_wheel.png textures/dir_wall.png textures/floor_a.png textures/floor_b.png textures/floor.png textures/font_extra.png textures/font.png textures/font_s.png textures/icon.png textures/rim_wall.png textures/shadow.png textures/sky.png textures/title.jpg textures/settings_textures.cfg textures/message_background.png textures/Armagetronad.ttf '/usr/local/share/games/armagetronad/textures'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/conquest'
+ /usr/bin/install -c -m 644  textures/tutorials/conquest/success.png textures/tutorials/conquest/start.png textures/tutorials/conquest/conquest.txt '/usr/local/share/games/armagetronad/textures/tutorials/conquest'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/speedkilldefense'
+ /usr/bin/install -c -m 644  textures/tutorials/speedkilldefense/fail2.png textures/tutorials/speedkilldefense/fail3.png textures/tutorials/speedkilldefense/trap3.png textures/tutorials/speedkilldefense/fail1.png textures/tutorials/speedkilldefense/trap1.png textures/tutorials/speedkilldefense/trap2.png textures/tutorials/speedkilldefense/start.png textures/tutorials/speedkilldefense/speedkilldefense.txt '/usr/local/share/games/armagetronad/textures/tutorials/speedkilldefense'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/doublegrind'
+ /usr/bin/install -c -m 644  textures/tutorials/doublegrind/success.png textures/tutorials/doublegrind/toohard1.png textures/tutorials/doublegrind/background.png textures/tutorials/doublegrind/toohard2.png textures/tutorials/doublegrind/toohard3.png textures/tutorials/doublegrind/doublegrind.txt '/usr/local/share/games/armagetronad/textures/tutorials/doublegrind'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/survival'
+ /usr/bin/install -c -m 644  textures/tutorials/survival/fail2.png textures/tutorials/survival/fail3.png textures/tutorials/survival/spiral.png textures/tutorials/survival/fail1.png textures/tutorials/survival/wiggle.png textures/tutorials/survival/survival.txt '/usr/local/share/games/armagetronad/textures/tutorials/survival'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/speedkill'
+ /usr/bin/install -c -m 644  textures/tutorials/speedkill/adjust3.png textures/tutorials/speedkill/adjust1.png textures/tutorials/speedkill/adjust2.png textures/tutorials/speedkill/success2.png textures/tutorials/speedkill/success1.png textures/tutorials/speedkill/fail_donothing.png textures/tutorials/speedkill/success3.png textures/tutorials/speedkill/speedkill.txt '/usr/local/share/games/armagetronad/textures/tutorials/speedkill'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/grinding'
+ /usr/bin/install -c -m 644  textures/tutorials/grinding/fail2.png textures/tutorials/grinding/nogrind.png textures/tutorials/grinding/fail3.png textures/tutorials/grinding/fail1.png textures/tutorials/grinding/grind.png textures/tutorials/grinding/grinding.txt '/usr/local/share/games/armagetronad/textures/tutorials/grinding'
+ /usr/bin/mkdir -p '/usr/local/share/games/armagetronad/textures/tutorials/teamstart'
+ /usr/bin/install -c -m 644  textures/tutorials/teamstart/success.png textures/tutorials/teamstart/background.png textures/tutorials/teamstart/straight.png textures/tutorials/teamstart/teamstart.txt '/usr/local/share/games/armagetronad/textures/tutorials/teamstart'
+make  install-data-hook
+make[3]: Entering directory '/workspaces/ArmagetronAd-armagetronad'
+DESTDIR="" ROOTDIR="" bash "/usr/local/share/games/armagetronad/scripts/sysinstall" install "/usr/local"
+Relocating scripts...
+Installing configuration directories in /etc...
+cd /etc/, ln -s ../usr/local/etc/games/armagetronad armagetronad
+cd /usr/local/bin/, ln -s armagetronad-master-0.4.0_alpha_z5909 armagetronad-master
+xdg-icon-resource: file '128' does not exist
+make[3]: *** [Makefile:1496: install-data-hook] Error 2
+make[3]: Leaving directory '/workspaces/ArmagetronAd-armagetronad'
+make[2]: *** [Makefile:1179: install-data-am] Error 2
+make[2]: Leaving directory '/workspaces/ArmagetronAd-armagetronad'
+make[1]: *** [Makefile:1130: install-am] Error 2
+make[1]: Leaving directory '/workspaces/ArmagetronAd-armagetronad'
+make: *** [Makefile:813: install-recursive] Error 1
