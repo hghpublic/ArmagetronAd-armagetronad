@@ -1,0 +1,37 @@
+= Armagetron Advanced
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+
+== Armagetron Advanced
+
+
+https://www.armagetronad.org/
+
+https://sourceforge.net/projects/armagetronad/
+
+https://gitlab.com/armagetronad/armagetronad
+
+Armagetron is a multiplayer game in 3d that attempts to emulate and expand on the lightcycle sequence from the movie Tron. 
+
+=== build
+
+[source, shell]
+----
+./bootstrap.sh
+./configure
+make
+sudo make install
+----
