@@ -1,0 +1,524 @@
+h1 { display: none; }
+body, html
+{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+@font-face
+{
+  font-family: ArmagetronAd;
+  src: url(Armagetronad.woff);
+}
+
+#serverlist *
+{
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+}
+
+#serverlist
+{
+  /* width: 700px; */
+  background: rgb(50, 50, 25);
+  font-family: "Droid Sans", sans-serif;
+  cursor: default;
+}
+
+#serverlist > .filters > .search-bar,
+#serverlist > ul > li > strong,
+#serverlist > ul > li > .playercounts
+{
+  font-family: ArmagetronAd, monospace;
+}
+
+#serverlist :focus
+{
+  outline: none;
+}
+#serverlist > .filters
+{
+  color: rgb(200, 200, 200);
+  overflow: hidden;
+}
+#serverlist > .filters > .search-bar
+{
+  position: relative;
+  padding: 2px;
+  overflow: hidden;
+  border: 1px solid rgb(150, 150, 150);
+  border-bottom: none;
+}
+#serverlist > .filters > .search-bar
+{
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, white),color-stop(1, rgb(230, 230, 230)));
+  background-image: -webkit-linear-gradient(top, white, rgb(230, 230, 230));
+  background-image: -moz-linear-gradient(top, white, rgb(230, 230, 230));
+  background-image: -ms-linear-gradient(top, white, rgb(230, 230, 230));
+  background-image: -o-linear-gradient(top, white, rgb(230, 230, 230));
+}
+
+#serverlist > .filters > .search-bar > #serverlistsearch
+{
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -o-transition: color .25s;
+  -ms-transition: color .25s;
+  transition: color .25s;
+}
+
+#serverlist > .filters > .search-bar > .status span,
+#serverlist > .filters > .search-bar > .status,
+#serverlist > .filters > .search-bar > label
+{
+  display: block;
+  position: absolute;
+  left: 0px;
+  padding-left: 2px;
+  white-space: nowrap;
+  -webkit-transition: visibility .2s, color .2s;
+  -moz-transition: visibility .2s, color .2s;
+  -o-transition: visibility .2s, color .2s;
+  -ms-transition: visibility .2s, color .2s;
+  transition: visibility .2s, color .2s;
+}
+#serverlist > .filters > .search-bar > .status,
+#serverlist > .filters > .search-bar > label
+{
+  color: rgb(150, 150, 150);
+}
+
+#serverlist > .filters > .search-bar > .buttons
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(150, 150, 150);
+}
+#serverlist > .filters > .search-bar > .buttons > a
+{
+  display: block;
+  cursor: pointer;
+  float: left;
+  height: 22px;
+  padding: 2px 7px 0 7px;
+  border-left: 1px solid rgb(150, 150, 150);
+}
+#serverlist > .filters .search-bar a.search-clear
+{
+  border-left: none;
+  -webkit-transition: visibility .2s, color .25s;
+  -moz-transition: visibility .2s, color .25s;
+  -o-transition: visibility .2s, color .25s;
+  -ms-transition: visibility .2s, color .25s;
+  transition: visibility .2s, color .25s;
+}
+#serverlist > .filters .search-bar a.more-link
+{
+  padding-top: 5px;
+  font-family: "Droid Sans",sans;
+  -webkit-transition: visibility .2s, color .5s;
+  -moz-transition: visibility .2s, color .5s;
+  -o-transition: visibility .2s, color .5s;
+  -ms-transition: visibility .2s, color .5s;
+  transition: visibility .2s, color .5s;
+}
+
+#serverlist > .filters > .search-bar > .status.hide,
+#serverlist > .filters > .search-bar > .status span.hide,
+#serverlist > .filters > .search-bar > label.hide,
+#serverlist > .filters > .search-bar a.hide
+{
+  color: transparent;
+  visibility: hidden;
+  -webkit-transition-delay: 0.2s, 0;
+  -moz-transition-delay: 0.2s, 0;
+  -o-transition-delay: 0.2s, 0;
+  -ms-transition-delay: 0.2s, 0;
+  transition-delay: 0.2s, 0;
+}
+#serverlist > .filters > .search-bar > #serverlistsearch.hide
+{
+  color: transparent;
+}
+#serverlist > .filters > .search-bar a.more-link
+{
+  background-color: transparent;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  -ms-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+}
+#serverlist > .filters > .search-bar a.more-link.active
+{
+  background-color: rgb(50, 50, 25);
+  color: white;
+}
+#serverlist > .filters > .options
+{
+  clear: both;
+  border-left: 1px solid rgb(150, 150, 150);
+  border-right: 1px solid rgb(150, 150, 150);
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding: 20px 50px 40px 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 200px;
+  -webkit-transition: margin-top .5s;
+  -moz-transition: margin-top .5s;
+  -o-transition: margin-top .5s;
+  -ms-transition: margin-top .5s;
+  transition: margin-top .5s;
+}
+#serverlist > .filters > .options.hide
+{
+  margin-top: -260px;
+}
+
+#serverlist > .filters > .options > *
+{
+  width: 48%;
+}
+#serverlist > .filters > .options h3
+{
+  margin: 20px 0 5px 0;
+}
+
+#serverlist > .filters > .options > .filters-re-server input,
+#serverlist > .filters > .options > .filters-re-players input
+{
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 2px;
+  background-color: rgb(100, 100, 75);
+  color: rgb(200, 200, 200);
+  font-family: "Droid Sans Mono", monospace;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -o-transition: color .2s;
+  -ms-transition: color .2s;
+  transition: color .2s;
+}
+#serverlist > .filters > .options > .filters-re-server input.error,
+#serverlist > .filters > .options > .filters-re-players input.error
+{
+  color: rgb(255, 100, 100);
+  -webkit-transition: color .5s 1s;
+  -moz-transition: color .5s 1s;
+  -o-transition: color .5s 1s;
+  -ms-transition: color .5s 1s;
+  transition: color .5s 1s;
+}
+
+#serverlist > .filters > .options > .filters-check input[type=checkbox],
+#serverlist > .filters > .options > .filters-sort input[type=radio]
+{
+  display: none;
+}
+
+#serverlist > .filters > .options > .filters-sort input + label,
+#serverlist > .filters > .options > .filters-check input + label
+{
+  display: inline-block;
+  cursor: pointer;
+  margin: 1px 5px 1px 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 transparent;
+  -webkit-transition: box-shadow .2s, color .2s, background-color .2s;
+  -moz-transition: box-shadow .2s, color .2s, background-color .2s;
+  -o-transition: box-shadow .2s, color .2s, background-color .2s;
+  -ms-transition: box-shadow .2s, color .2s, background-color .2s;
+  transition: box-shadow .2s, color .2s, background-color .2s;
+}
+#serverlist > .filters > .options > .filters-sort input:checked + label,
+#serverlist > .filters > .options > .filters-check input:checked + label
+{
+  background-color: rgb(200, 200, 200);
+  color: rgb(50, 50, 25);
+  box-shadow: 2px 2px 0 black;
+}
+
+#serverlist > .filters > .options > .filters-re-server,
+#serverlist > .filters > .options > .filters-sort
+{
+  float: left;
+  clear: both;
+}
+#serverlist > .filters > .options > .filters-re-players,
+#serverlist > .filters > .options > .filters-check
+{
+  margin-left: 52%;
+}
+
+#serverlist > ul
+{
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  min-height: 100px;
+  clear: both;
+  border-style: none solid solid solid;
+  border-color: rgb(150, 150, 150);
+  border-width: 1px;
+}
+
+#serverlist span.dark
+{
+  background-color: white;
+}
+
+#serverlist > ul > li
+{
+  display: block;
+  clear: both;
+}
+
+#serverlist > ul.filter-active > li.filter-nomatch
+{
+  display: none;
+}
+
+#serverlist > ul > li
+{
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#serverlist > ul > li.collapsed
+{
+  min-height: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+@-webkit-keyframes activeserver { 0% { opacity: 1; } 50% { opacity: .8; } 100% { opacity: 1; } }
+@-moz-keyframes activeserver { 0% { opacity: 1; } 50% { opacity: .8; } 100% { opacity: 1; } }
+@-o-keyframes activeserver { 0% { opacity: 1; } 50% { opacity: .8; } 100% { opacity: 1; } }
+@-ms-keyframes activeserver { 0% { opacity: 1; } 50% { opacity: .8; } 100% { opacity: 1; } }
+@keyframes activeserver {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#serverlist > ul > li > strong
+{
+  display: inline;
+  cursor: pointer;
+  margin-left: -20px;
+  white-space: nowrap;
+}
+#serverlist > ul > li > strong *
+{
+  cursor: inherit;
+}
+#serverlist > ul > li:not(.collapsed) > strong,
+#serverlist > ul > li:not(.collapsed) > strong *
+{
+  -webkit-animation-name: activeserver;
+  -moz-animation-name: activeserver;
+  -o-animation-name: activeserver;
+  -ms-animation-name: activeserver;
+  animation-name: activeserver;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#serverlist > ul > li > .playercounts
+{
+  margin-left: 5px;
+  font-size: 13px;
+}
+#serverlist > ul > li > .playercounts:before
+{
+  content: "(";
+}
+#serverlist > ul > li > .playercounts:after
+{
+  content: ")";
+}
+#serverlist > ul > li.bookmark > .playercounts:after
+{
+  content: ", bookmarked)";
+}
+#serverlist > ul > li > .playercounts > .maxplayers:before
+{
+  content: "/";
+}
+
+#serverlist > ul > li > p.description
+{
+  font-size: 10px;
+}
+#serverlist > ul > li a
+{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(150, 150, 255);
+}
+#serverlist > ul > li > a.join-link
+{
+  font-size: 12px;
+  white-space: nowrap;
+  color: rgb(200, 200, 255);
+  text-decoration: underline;
+  margin-left: 10px;
+}
+#serverlist > ul > li > p.description > span.version
+{
+  color: rgb(100, 100, 100);
+}
+#serverlist > ul > li > ul > li
+{
+  display: inline;
+  font-size: 13px;
+}
+
+#serverlist > ul > li.collapsed
+{
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#serverlist > ul > li.collapsed > strong
+{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+#serverlist > ul > li.collapsed > a.join-link,
+#serverlist > ul > li.collapsed > p.description,
+#serverlist > ul > li.collapsed > a.website
+{
+  display: none;
+}
+
+#serverlist > ul > li.collapsed > .overlay
+{
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 20px;
+  height: 100%;
+  background-image: -webkit-gradient(linear,left top,right top,color-stop(0, transparent),color-stop(1, black));
+  background-image: -webkit-linear-gradient(left, transparent, black);
+  background-image: -moz-linear-gradient(left, transparent, black);
+  background-image: -ms-linear-gradient(left, transparent, black);
+  background-image: -o-linear-gradient(left, transparent, black);
+}
+#serverlist > ul > li.collapsed > ul
+{
+  display: inline;
+  overflow: hidden;
+  color: #999;
+}
+#serverlist > ul > li.collapsed > ul:not(:empty):before
+{
+  content: ": ";
+  padding-right: 10px;
+}
+#serverlist > ul > li.collapsed > ul li
+{
+  font-size: 10.7px;
+}
+#serverlist > ul > li ul li:after
+{
+  content: ", ";
+}
+#serverlist > ul > li ul li:last-child:after
+{
+  content: "";
+}
+
+#serverlist > ul > li.unrolled
+{
+}
+
+#serverlist .help
+{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 300px;
+  margin-left: -180px;
+  color: white;
+  padding: 20px 30px;
+  background: rgba(50, 50, 50, .950);
+  color: rgb(200, 200, 200);
+  border-radius: 25px;
+  -webkit-transition: visibility 0.2s 0s, opacity 0.2s, top 0.2s, height 0.2s;
+  -moz-transition: visibility 0.2s 0s, opacity 0.2s, top 0.2s, height 0.2s;
+  -o-transition: visibility 0.2s 0s, opacity 0.2s, top 0.2s, height 0.2s;
+  -ms-transition: visibility 0.2s 0s, opacity 0.2s, top 0.2s, height 0.2s;
+  transition: visibility 0.2s 0s, opacity 0.2s, top 0.2s, height 0.2s;
+}
+#serverlist .help.hide
+{
+  top: 28%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-delay: 0.2s, 0, 0, 0;
+  -moz-transition-delay: 0.2s, 0, 0, 0;
+  -o-transition-delay: 0.2s, 0, 0, 0;
+  -ms-transition-delay: 0.2s, 0, 0, 0;
+  transition-delay: 0.2s, 0, 0, 0;
+}
+#serverlist .help h3
+{
+  margin: 0 0 15px 0;
+}
+#serverlist .help dt
+{
+  float: left;
+  font-family: "Droid Sans Mono",monospace;
+  color: white;
+}
+#serverlist .help dt:before
+{
+}
+#serverlist .help dd
+{
+  margin-bottom: 5px;
+}
+#serverlist .help dd:before
+{
+  content: "—";
+  margin: 0 4px;
+}
