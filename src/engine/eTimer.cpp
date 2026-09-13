@@ -31,6 +31,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "eNetGameObject.h"
 #include "nSimulatePing.h"
 #include "tRecorder.h"
+#include "tRandom.h"
 #include "tMath.h"
 #include "tConfiguration.h"
 #include "eLagCompensation.h"
@@ -223,7 +224,8 @@ private:
         leftInCurrentBucket_ -= dt;
 #ifdef DEBUG
         // fluctuate bucket overflow a bit to test one-off compensation
-        const REAL threshold = random() / (REAL(RAND_MAX) * std::max(30.0f, bestFPS_) * 2);
+        auto &randomizer = tRandomizer::GetInstance();
+        const REAL threshold = randomizer.Get() / (std::max(30.0f, bestFPS_) * 2);
 #else
         const REAL threshold = 0.0f;
 #endif

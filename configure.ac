@@ -1,4 +1,4 @@
-/dnl I would like to do this to generate the version number...
+dnl I would like to do this to generate the version number...
 dnl AC_DEFUN([AUTOMATIC_VERSION],syscmd([sh batch/make/version .]))
 
 dnl but have to do this with version generated in bootstrap.sh instead for some reason
@@ -884,6 +884,7 @@ AC_CACHE_SAVE
 
 dnl load conan settings if they exist
 test -r $(dirname $0)/conan/conanautotoolstoolchain.sh && source $(dirname $0)/conan/conanautotoolstoolchain.sh
+test -r $(dirname $0)/conan/conanbuildenv.sh && source $(dirname $0)/conan/conanbuildenv.sh
 
 dnl *************************************************
 dnl         libxml2
@@ -1557,6 +1558,7 @@ export LIBS
 
 AC_OUTPUT(src/Makefile
 src/protobuf/Makefile
+conan/Makefile
 src/first/Makefile
 Makefile
 batch/Makefile
